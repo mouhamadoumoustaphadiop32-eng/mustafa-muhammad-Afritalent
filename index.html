@@ -29,83 +29,119 @@
     <main>
         <!-- Hero -->
         <section>
-            <h1>AfriTalent - Plateforme Freelance Tech Afrique</h1>
-            <h2>La Plateforme numéro 1 en Afrique pour connecter talents freelances et entreprises innovantes</h2>
-            <button>Je suis Freelance</button>
-            <button>Je recrute un Freelance</button>
-            <p>+2500 Freelances</p>
-            <p>+800 partenaires</p>
-            <p>+12000 projets livrés</p>
-        </section>
+            <div class="hero">
+    <div class="hero-content">
+        <h1>AfriTalent - Plateforme Freelance Tech Afrique</h1>
+        <h2>La Plateforme numéro 1 en Afrique pour connecter talents freelances et entreprises innovantes</h2>
+        <button>Je suis Freelance</button>
+        <button>Je recrute un Freelance</button>
+        <p>+2500 Freelances</p>
+        <p>+800 partenaires</p>
+        <p>+12000 projets livrés</p>
+    </div>
+    <div class="hero-image">
+        <img src="images/histoire.jpg" alt="Freelance tech">
+    </div>
+</div>
 
-        <!-- Comment ça marche -->
-        <section>
-            <h2>Fonctionnement</h2>
-            <div>
-                <h3>Créer votre profil</h3>
-                <p>Inscrivez-vous gratuitement</p>
-            </div>
-            <div>
-                <h3>Trouvez des missions</h3>
-                <p>Recevez des alertes personnalisées</p>
-            </div>
-            <div>
-                <h3>Collaborez en sécurité</h3>
-                <p>Échangez et soyez rémunéré</p>
-            </div>
-            <div>
-                <h3>Développez votre carrière</h3>
-                <p>Formations et mentorat</p>
-            </div>
-        </section>
+<!-- Comment ça marche - Bento Grid -->
+<section>
+    <h2>Fonctionnement</h2>
+    <div class="bento-grid">
+        <div class="bento-carte">
+            <div class="numero">01</div>
+            <h3>Créer votre profil</h3>
+            <p>Inscrivez-vous gratuitement</p>
+        </div>
+        <div class="bento-carte">
+            <div class="numero">02</div>
+            <h3>Trouvez des missions</h3>
+            <p>Recevez des alertes personnalisées</p>
+        </div>
+        <div class="bento-carte">
+            <div class="numero">03</div>
+            <h3>Collaborez en sécurité</h3>
+            <p>Échangez et soyez rémunéré</p>
+        </div>
+        <div class="bento-carte">
+            <div class="numero">04</div>
+            <h3>Développez votre carrière</h3>
+            <p>Formations et mentorat</p>
+        </div>
+    </div>
+</section>
 
-        <!-- Nos services -->
-        <section>
-            <h2>Nos services</h2>
-            <div>
-                <h3>Développement Web</h3>
-                <p>245 freelances</p>
-            </div>
-            <div>
-                <h3>Design UI/UX</h3>
-                <p>126 freelances</p>
-            </div>
-            <div>
-                <h3>Marketing Digital</h3>
-                <p>97 freelances</p>
-            </div>
-            <div>
-                <h3>Data & IA</h3>
-                <p>76 freelances</p>
-            </div>
-            <div>
-                <h3>Rédaction Tech</h3>
-                <p>112 freelances</p>
-            </div>
-            <div>
-                <h3>DevOps & Cloud</h3>
-                <p>56 freelances</p>
-            </div>
-        </section>
+<!-- Nos services -->
+<section>
+    <h2>Nos services</h2>
+    <div class="categories-grid">
+        <div class="categories-carte">
+            <i class="bi bi-code-slash"></i>
+            <h3>Développement Web</h3>
+            <p>245 freelances</p>
+        </div>
+        <div class="categories-carte">
+            <i class="bi bi-brush"></i>
+            <h3>Design UI/UX</h3>
+            <p>126 freelances</p>
+        </div>
+        <div class="categories-carte">
+            <i class="bi bi-megaphone"></i>
+            <h3>Marketing Digital</h3>
+            <p>97 freelances</p>
+        </div>
+        <div class="categories-carte">
+            <i class="bi bi-graph-up"></i>
+            <h3>Data & IA</h3>
+            <p>76 freelances</p>
+        </div>
+        <div class="categories-carte">
+            <i class="bi bi-pencil"></i>
+            <h3>Rédaction Tech</h3>
+            <p>112 freelances</p>
+        </div>
+        <div class="categories-carte">
+            <i class="bi bi-cloud-upload"></i>
+            <h3>DevOps & Cloud</h3>
+            <p>56 freelances</p>
+        </div>
+    </div>
+</section>
 
-        <!-- Témoignages -->
-        <section>
-            <h2>Témoignages</h2>
-            <div>
-                <p>"Que des talents !"</p>
-                <h4>Moustapha Gueye</h4>
-                <p>CEO TechCorp</p>
+<!-- Témoignages - Carousel -->
+<section>
+    <h2>Témoignages</h2>
+    <div id="temoinscarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carte-temoins">
+                    <p>"Que des talents !"</p>
+                    <h4>Moustapha Gueye</h4>
+                    <p>CEO TechCorp</p>
+                </div>
             </div>
-            <div>
-                <p>"AfriTalent m'a trouvé des missions rapidement !"</p>
-                <h4>Fallou Fall</h4>
-                <p>Développeur</p>
+            <div class="carousel-item">
+                <div class="carte-temoins">
+                    <p>"AfriTalent m'a trouvé des missions rapidement !"</p>
+                    <h4>Fallou Fall</h4>
+                    <p>Développeur</p>
+                </div>
             </div>
-            <div>
-                <p>"Communauté sympathique !"</p>
-                <h4>Pierre Diouf</h4>
-                <p>Designer UI/UX</p>
+            <div class="carousel-item">
+                <div class="carte-temoins">
+                    <p>"Communauté sympathique !"</p>
+                    <h4>Pierre Diouf</h4>
+                    <p>Designer UI/UX</p>
+                </div>
             </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#temoinscarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#temoinscarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
         </section>
 
         <!-- CTA -->

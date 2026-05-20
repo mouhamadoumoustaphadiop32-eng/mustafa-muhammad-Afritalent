@@ -32,9 +32,9 @@
         <h1>Nos services</h1>
 
         <!-- Les tarifs -->
-        <div>
+        <div class="container">
             <!-- Offre Gratuite -->
-            <div>
+            <div cartetarif>
                 <h3>Gratuit</h3>
                 <p>0 FCFA/mois</p>
                 <ul>
@@ -46,7 +46,7 @@
             </div>
 
             <!-- Offre Pro -->
-            <div>
+            <div class="cartefacture">
                 <h3>Pro</h3>
                 <p>1000 FCFA/mois</p>
                 <ul>
@@ -59,7 +59,7 @@
             </div>
 
             <!-- Offre Entreprise -->
-            <div>
+            <div cartetarif>
                 <h3>Entreprise</h3>
                 <p>1500 FCFA/mois</p>
                 <ul>
@@ -74,41 +74,41 @@
         <!-- Foire aux questions -->
         <section>
             <h2>Foire aux questions</h2>
-            <div>
-                <div>
-                    <button>Comment fonctionne AfriTalent ?</button>
-                    <div>
+            <div class="faqcontainer">
+                <details class="faqitem">
+                    <summary class="question">Comment fonctionne AfriTalent ?</summary>
+                    <div class="reponse">
                         <p>AfriTalent connecte les freelances aux entreprises qui recrutent. Inscrivez-vous et postulez dès maintenant.</p>
                     </div>
-                </div>
+                </details>
 
-                <div>
-                    <button>Combien coûte l'inscription ?</button>
-                    <div>
+                <details class="faqitem">
+                    <summary class="question">Combien coûte l'inscription ?</summary>
+                    <div class="reponse">
                         <p>L'inscription est gratuite. Des offres Pro et Entreprise sont disponibles pour plus de fonctionnalités.</p>
                     </div>
-                </div>
+                </details>
 
-                <div>
-                    <button>Comment payer mes freelances ?</button>
-                    <div>
+                <details class="faqitem">
+                    <summary class="question">Comment payer mes freelances ?</summary>
+                    <div class="reponse">
                         <p>Nous supportons plusieurs moyens de paiement sécurisés via notre plateforme.</p>
                     </div>
-                </div>
+                </details>
 
-                <div>
-                    <button>Quels sont les types de freelances ?</button>
-                    <div>
+                <details class="faqitem">
+                    <summary class="question">Quels sont les types de freelances ?</summary>
+                    <div class="reponse">
                         <p>Développeurs, designers, experts marketing, data scientists, rédacteurs tech, etc.</p>
                     </div>
-                </div>
+                </details>
 
-                <div>
-                    <button>AfriTalent est-il disponible dans toute l'Afrique ?</button>
-                    <div>
+                <details class="faqitem">
+                    <summary class="question">AfriTalent est-il disponible dans toute l'Afrique ?</summary>
+                    <div class="reponse">
                         <p>Oui, nous sommes disponibles dans toute l'Afrique avec une présence particulière en Afrique de l'Ouest.</p>
                     </div>
-                </div>
+                </details>
             </div>
         </section>
     </main>

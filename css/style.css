@@ -266,3 +266,391 @@ footer ul li a:hover {
     color: var(--violet);
     margin-top: 15px;
 }
+/*style pour freelance*/
+/* Grille des freelances - CORRIGÉE */
+.gridfreelance{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Carte freelance */
+.cartefreelance{
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cartefreelance:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cartefreelance img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.cartefreelance h3{
+    color: purple;
+    margin-bottom: 5px;
+}
+
+.cartefreelance p{
+    margin: 5px 0;
+    color: #555;
+}
+
+.cartefreelance p:nth-of-type(3){
+    font-weight: bold;
+    color: purple;
+    font-size: 1.1rem;
+}
+
+.cartefreelance p:nth-of-type(4){
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.cartefreelance button{
+    background: purple;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Filtres */
+.filtre{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.filtre button{
+    background: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filtre button:hover{
+    background: purple;
+    color: white;
+}
+
+/*survol*/
+.cartefreelance:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+/*style pour la partie tarif*/
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.cartetarif{
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.cartefacture{
+    background: white;
+    
+    transform: scale(1.05);
+}
+/*style pour la partie about*/
+.histoire{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 40px 0;
+}
+.texte{
+    flex: 1;
+}
+.logo{
+    flex: 1;
+}
+.logo img{
+    width: 100%;
+    border-radius: 15px;
+}
+.gridvaleur{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+.cartevaleur{
+    background: var(--gris-clair);
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.cartevaleur:hover{
+    transform: translateY(-5px);
+}
+.cartevaleur h3{
+    color: var(--violet);
+    margin-bottom: 15px;
+}
+.gridequipe{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+    margin: 40px 0;
+}
+.carteequipe{
+    background: var(--gris-clair);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.carteequipe:hover{
+    transform: translateY(-5px);
+}
+.carteequipe img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.carteequipe h3{
+    color: var(--violet);
+    margin-bottom: 5px;
+}
+.carteequipe p{
+    color: #666;
+    margin-bottom: 15px;
+}
+.carteequipe a{
+    color: var(--violet);
+    text-decoration: none;
+    margin: 0 10px;
+}
+.carteequipe a:hover{
+    text-decoration: underline;
+}
+.gridstatistique{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.cartestatistique{
+    background: purple;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.cartestatistique:hover{
+    transform: scale(1.05);
+}
+.cartestatistique p:first-child{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+/*style pour la partie contact*/
+.contactcontainer{
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+.formecontact{
+    flex: 2;
+}
+.formecontact .formegroupe{
+    margin-bottom: 20px;
+}
+.formecontact label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.formecontact input,
+.formecontact select,
+.formecontact textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.messageerreur{
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+.messagesucces{
+    color: green;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.infocontact{
+    flex: 1;
+    background: var(--gris-clair);
+    padding: 25px;
+    border-radius: 15px;
+}
+.infocontact h3{
+    color: var(--violet);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.infocontact h3:first-of-type{
+    margin-top: 0;
+}
+.mapcontainer{
+    margin: 30px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/*c5 responsive*/
+
+/*TABLETTE*/
+@media (max-width: 768px) {
+    /*Navbar en colonne*/
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    /*Titres plus petits*/
+    h1{
+        font-size: 1.8rem;
+    }
+    
+    h2{
+        font-size: 1.3rem;
+    }
+    
+    /*Page d'accueil*/
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .bento-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .categories-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /*Page freelances*/
+    .gridfreelance{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /*Page tarifs*/
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /*Page about*/
+    .histoire{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .gridvaleur{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gridequipe{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gridstatistique{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Page contact */
+    .contactcontainer{
+        flex-direction: column;
+    }
+    
+    .infocontact{
+        order: -1;
+    }
+}
+
+/* MOBILE*/
+@media (max-width: 480px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gridfreelance {
+        grid-template-columns: 1fr;
+    }
+    
+    .gridvaleur{
+        grid-template-columns: 1fr;
+    }
+    
+    .gridequipe{
+        grid-template-columns: 1fr;
+    }
+    
+    .gridstatistique{
+        grid-template-columns: 1fr;
+    }
+    
+    /* Ajustement des boutons */
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .filtre{
+        flex-wrap: wrap;
+    }
+    
+    .filtre button {
+        width: auto;
+    }
+}

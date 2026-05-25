@@ -654,3 +654,81 @@ footer ul li a:hover {
         width: auto;
     }
 }
+/*c6*/
+/*mode sombre*/
+body.dark-mode{
+    background: #1a1a2e;
+    color: white;
+}
+body.dark-mode header{
+    background: #0f0f1a;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+body.dark-mode nav ul li a{
+    color: white !important;
+}
+body.dark-mode nav ul li a:hover{
+    color: #a855f7 !important;
+}
+body.dark-mode nav button{
+    background: #a855f7;
+    color: white;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4{
+    color: #a855f7;
+}
+body.dark-mode .bento-carte,
+body.dark-mode .categories-carte,
+body.dark-mode .carte-temoins,
+body.dark-mode .cartefreelance,
+body.dark-mode .cartefacture,
+body.dark-mode .cartevaleur,
+body.dark-mode .carteequipe,
+body.dark-mode .cartestatistique{
+    background: #16213e;
+    color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+/*texte dans les cartes*/
+body.dark-mode .bento-carte p,
+body.dark-mode .categories-carte p,
+body.dark-mode .cartefreelance p,
+body.dark-mode .cartevaleur p,
+body.dark-mode .carteequipe p{
+    color: #cccccc;
+}
+body.dark-mode .footer{
+    background: #0f0f1a;
+}
+body.dark-mode .footer h3{
+    color: #a855f7;
+}
+body.dark-mode .footer ul li a{
+    color: white;
+}
+body.dark-mode .footer ul li a:hover{
+    color: #a855f7;
+}
+/*formulaire contact*/
+body.dark-mode .formecontact input,
+body.dark-mode .formecontact select,
+body.dark-mode .formecontact textarea{
+    background: #0f0f1a;
+    border: 1px solid #a855f7;
+    color: white;
+}
+body.dark-mode .infocontact{
+    background: #16213e;
+    color: white;
+}
+body.dark-mode .infocontact h3{
+    color: #a855f7;
+}
+/*statistique*/
+body.dark-mode .hero-content p{
+    background: #a855f7;
+    color: white;
+}

@@ -1,0 +1,42 @@
+//annee dynamique
+document.getElementById('annee').textContent=new Date().getFullYear();
+//dark mode 
+const darkmodebtn =document.createElement('button');
+darkmodebtn.textContent='🌙';
+darkmodebtn.className='mode-sombre';
+darkmodebtn.style.cssText='background:purple; color:white; border:none; padding:10px 15px; border-radius:50%; cursor:pointer; margin-left:10px;';
+const nav=document.querySelector('nav');
+const rejoindrebtn=document.querySelector('nav button');
+if(nav&&rejoindrebtn){
+    rejoindrebtn.insertAdjacentElement('afterend',darkmodebtn);
+}
+if(localStorage.getItem('darkMode')==='enabled'){
+        document.body.classList.add('dark-mode');
+        darkmodebtn.textContent='☀️';
+    }
+darkmodebtn.addEventListener('click',()=>{
+    document.body.classList.toggle('dark-mode');
+    if(document.body.classList.contains('dark-mode')){
+        localStorage.setItem('darkMode','enabled');
+        darkmodebtn.textContent='☀️';
+    }else{
+        localStorage.setItem('darkMode','disabled');
+        darkmodebtn.textContent='🌙';
+    }
+});
+//bouton retour
+const retourenhaut=document.createElement('button');
+retourenhaut.textContent='↑';
+retourenhaut.className='retour-en-haut';
+retourenhaut.style.cssText='position:fixed; bottom:20px; right:20px; background:purple; color:white; border:none; width:50px; height:50px; border-radius:50%; font-size:24px; cursor:pointer; display:none; z-index:1000;';
+document.body.appendChild(retourenhaut);
+window.addEventListener('scroll',() =>{
+    if(window.scrollY > 300){
+        retourenhaut.style.display='block';
+    }else{
+        retourenhaut.style.display='none';
+    }
+});
+retourenhaut.addEventListener('click',()=>{
+    window.scrollTo({top:0,behavior: 'smooth'});
+});

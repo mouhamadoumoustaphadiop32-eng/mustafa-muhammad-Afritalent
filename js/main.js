@@ -40,3 +40,50 @@ window.addEventListener('scroll',() =>{
 retourenhaut.addEventListener('click',()=>{
     window.scrollTo({top:0,behavior: 'smooth'});
 });
+//c7
+const cpt=document.querySelectorAll('.cartestatistique p:first-child,.hero-content p');
+const animercpt=()=>{
+    cpt.forEach(compteur=>{
+        const texte=compteur.textContent;
+        const valeur=parseInt(texte.replace(/[^0-9]/g,''));
+        if(!isNaN(valeur)&& !compteur.CDATA_SECTION_NODE.anime){
+            const rect=compteur.getBoundingClientRect();
+            if(rect.top<window.innerHeight-100){
+                compteur.CDATA_SECTION_NODE.anime='true';
+                let actuel=0;
+                const increment=valeur/50;
+                const temps=setInterval(()=>{
+                    actuel+=increment;
+                    if(actuel>=valeur){
+                        compteur.textContent=texte.replace(valeur,Math.floor(valeur));
+                        clearInterval(temps);
+                    }else{
+                        compteur.textContent=texte.replace(valeur,Math.floor(actuel));
+                    }
+                },30);
+            }
+        }
+    });
+};
+//animation scroll
+const section=document.querySelectorAll('section,.hero,.bento-grid,.categories-grid');
+const animation=()=>{
+    section.forEach(section=>{
+        const rect=section.getBoundingClientRect();
+        if(rect.top<window.innerHeight-100){
+            section.classList.add('visible');
+        }
+    });
+};
+//ajouter la class aux section
+section.forEach(section=>{
+    section.classList.add('fade-in');
+});
+//ecouter le scroll
+window.addEventListener('scroll',()=>{
+    animercpt();
+    animation();
+});
+//declencher une fois au changement
+animercpt();
+animation();

@@ -117,7 +117,7 @@ if(form){
         const nomErreur=document.getElementById('nomErreur');
         if(nom.value.trim()===''){
             nomErreur.textContent='Le nom est requis';
-            isvalid=false;
+            isValid=false;
         }else{
             nomErreur.textContent='';
         }
